@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Journalism Unveiled with Mr. Arun</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>Journalism Unveiled with Mr. Arun</h1>
+    </header>
+    <section>
+      <img id="img" src="C:\Users\Hp\Pictures\Mr.A.jpg" alt="" />
+
+      <h2>About Mr. Arun</h2>
+      <p>
+        Mr. Arun is a old hand journalist with decades of experience. Throughout
+        his career, he's been dedicated to uncovering truths, telling stories,
+        and shaping public opinion.
+
+        <br />
+
+        Throughout his distinguished career, Mr. Arun has adeptly navigated the
+        dynamic shifts of the media landscape, earning accolades for his
+        integrity, passion, and commitment to journalistic excellence.
+      </p>
+
+      <h2>The Course</h2>
+      <p>
+        Start a transformative journey with Mr. Arun through our comprehensive
+        2-week online course designed exclusively for budding journalists. Gain
+        invaluable insights, practical skills, and insider tips from a seasoned
+        industry expert. curated by Mr. Arun himself...
+      </p>
+
+      <h2>Why Choose "Journalism Unveiled"?</h2>
+      <p>
+        Real-World Experience: Learn from someone who has been in the trenches
+        and knows the ins and outs of the industry. Personalized Guidance:
+        Benefit from individualized feedback and mentoring to help you hone your
+        craft. Practical Insights: Gain hands-on experience through case
+        studies, simulations, and real-life examples. Networking Opportunities:
+        Connect with fellow aspiring journalists and build lasting professional
+        relationships.
+      </p>
+      <div class="container">
+        <h2>Join Us on this Exciting Journey!</h2>
+
+        <h1>Enroll Now</h1>
+        <form id="enrollForm">
+          <input type="text" id="fullName" placeholder="Full Name" required />
+          <input type="email" id="email" placeholder="Email Address" required />
+          <input type="contact" id="contact" placeholder="Contact" required />
+          <input type="address" id="address" placeholder="Address" required />
+
+          <input type="submit" value="Enroll" />
+        </form>
+      </div>
+
+      <p>
+        Stay Connected: Sign up for updates and exclusive content. Follow Mr.
+        Arun on social media for behind-the-scenes.
+      </p>
+      <div class="symbol">
+        <span> <i class="fab fa-linkedin fa-2x"> </i></span>
+        <span> <i class="fa-brands fa-facebook fa-2x"></i> </span>
+        <span> <i class="fa-brands fa-twitter fa-2x"></i></span>
+        <span> <i class="fa-brands fa-github fa-2x"></i></span>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        &copy; 2024 Journalism Unveiled. All rights reserved. |
+        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+      </p>
+    </footer>
+    <script>
+      document
+        .getElementById("enrollForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent form submission
+          var fullName = document.getElementById("fullName").value;
+          var email = document.getElementById("email").value;
+          var contact = document.getElementById("contact").value;
+          var address = document.getElementById("address").value;
+          // Here you can perform further validation if needed
+          // For simplicity, we'll just log the values
+          console.log("Full Name:", fullName);
+          console.log("Email:", email);
+
+          // You can also send these values to a server using AJAX for processing
+          // For this example, we'll just clear the form fields
+          document.getElementById("fullName").value = "";
+          document.getElementById("email").value = "";
+          document.getElementById("contact").value = "";
+          document.getElementById("address").value = "";
+
+          alert("Enrollment successful! Thank you.");
+        });
+    </script>
+  </body>
+</html>
